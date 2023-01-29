@@ -3,7 +3,7 @@ variable "region" {
 }
 
 variable "tag" {
-  default = "myec2"
+  default = "dev"
 }
 
 variable "ami_name_value" {
@@ -23,10 +23,10 @@ variable "aws_region" {
 }
 
 variable "aws_access_key" {
-  default = "AKIAYZY6ZNAQG4243ON7"
+  default = ""
 }
 variable "aws_secret_key" {
-  default = "eE7mNEe6Q6tUht62enL95DYFnHm+zijQTOJV86oL"
+  default = ""
 }
 
 variable "iscreate" {
@@ -38,8 +38,8 @@ variable "sg_id" {
 }
 
 variable "keyname" {
-  default = "test"
+  default = "dev_us-east-1"
 }
 variable "vpc_id" {
-   default = "vpc-0a5697a37e515074a"
+   default = "vpc-0fdf89ab7f7870720"
 }
