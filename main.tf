@@ -61,17 +61,7 @@ resource "aws_security_group" "allow_all" {
   }
 }
 
-resource "aws_instance" "web" {
-  ami                    = "${data.aws_ami.ubuntu.id}"
-  instance_type          = "${var.instance_type}"
-  key_name               = "${var.keyname}"
-  vpc_security_group_ids = [var.sg_id]
-
-  tags = {
-    Name = "${var.tag}"
-  }
-}
-resource "aws_instance" "web2" {
+resource "aws_instance" "dev" {
   ami                    = "${data.aws_ami.ubuntu.id}"
   instance_type          = "${var.instance_type}"
   key_name               = "${var.keyname}"
